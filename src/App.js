@@ -9,7 +9,7 @@ import SoundOnIcon from './Icons/SoundOn';
 import {getPublicPath} from './utils';
 
 function App() {
-  const [play, {stop, isPlaying}] = useSound(getPublicPath('sounds/background-music.mp3'), { volume: 0.2 });
+  const [play, {stop, isPlaying}] = useSound(getPublicPath('sounds/background-music.mp3'), { volume: 0.1 });
   const [hasBgMusic, setHasBgMusic] = useState(true);
 
   useEffect(() => {
@@ -47,6 +47,11 @@ function App() {
           )
         })}
       </Grid>
+
+      <Credit>
+        Réalisé par <a target="_blank" href="https://twitter.com/thevalarai">@TheValarai</a> & <a target="_blank" href="https://twitter.com/stucklogo">@stuckLogo</a><br/>
+        <small><a target="_blank" href="https://github.com/LoicGoyet/deanrell-soundbox">Le code source est disponible ici</a></small>
+      </Credit>
     </Container>
   );
 }
@@ -81,3 +86,7 @@ const MuteBtn = styled.button`
   border: 0;
   color: currentColor;
 `;
+
+const Credit = styled.p`
+text-shadow: none;
+`
