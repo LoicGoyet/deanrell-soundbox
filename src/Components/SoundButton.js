@@ -44,6 +44,7 @@ const Wrapper = styled.button`
 
 const Label = styled.label`
     transform: rotate(${props => props.rotate}deg);
+    transition: transform 100ms ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
