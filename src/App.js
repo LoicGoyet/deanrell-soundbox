@@ -68,6 +68,7 @@ const Container = styled.main`
   width: 100%;
   margin: auto;
   padding: 0 1rem;
+  box-sizing: border-box;
 `;
 
 const Grid = styled.div`
@@ -88,5 +89,6 @@ const MuteBtn = styled.button`
 `;
 
 const Credit = styled.p`
-text-shadow: none;
+  text-shadow: none;
+  margin-top: 3rem;
 `
